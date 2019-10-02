@@ -1,0 +1,36 @@
+
+<div class="container main1">
+        <div class="row">
+          <div class="col-md-8  offset-3">
+                <div class="input-group input-group-lg">
+                      <h1>WELCOME TO
+                            <span class="spn">SHOTNER APP</span> </h1>
+                      </div>
+                      
+          </div>
+          <div class="col-md ml-auto "></div>
+        </div>
+      </div>
+  <div class="container-fluid main">
+    <div class="row">
+      <div class="col-md-8  offset-2">
+            <div class="input-group input-group-lg">
+                    <input pattern="^(?:http(s)?:\/\/)?[\w.-]+(?:\.[\w\.-]+)+[\w\-\._~:/?#[\]@!\$&'\(\)\*\+,;=.]+$" type="text" class="form-control" placeholder="Enter Your URL" #inputData="ngModel" ngModel>
+               
+                </div>  
+                <small *ngIf="inputData.invalid && inputData.touched">Enter valid url</small>     
+      </div>
+      <button class="btn btn-primary btn-lg" type="submit" [disabled]="inputData.invalid" (click)="SendInputData(inputData)"> Submit</button>
+      <div class="col-md ml-auto "></div>
+    </div>
+    <div class="row mt-3" *ngIf="newUrl"> 
+            <div class="col-md-8  offset-2">
+                  <div>
+                        <p class="info text-light">Your shoter code :</p>
+                        <a class="short" [href]="newUrl">{{newUrl}}</a>
+                        </div>         
+            </div>
+           
+            <div class="col-md ml-auto "></div>
+          </div>
+  </div>

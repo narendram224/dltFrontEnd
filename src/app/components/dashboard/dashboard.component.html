@@ -1,0 +1,67 @@
+<div class="container-fluid">
+<div class="row">
+    <div class="col-md-5">
+            <table class="table table-borderless table-hover bg-warning">
+                    <thead class="thead-dark">
+                      <tr>
+                        <th scope="col">Date</th>
+                        <th scope="col">Visitor</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <th scope="row">1</th>
+                        <td>Mark</td>
+                      </tr>
+                      <tr>
+                        <th scope="row">2</th>
+                        <td>Jacob</td>
+                      </tr>
+                      <tr>
+                        <th scope="row">3</th>
+                        <td>Larry</td>
+                      </tr>
+                    </tbody>
+                  </table>
+    </div>
+    <div class="col-md-7">
+        <div style="display:block">
+         <canvas baseChart 
+    [data]="pieChartData" 
+    [labels]="pieChartLabels" 
+    [chartType]="pieChartType"
+    [options]="pieChartOptions"
+    [plugins]="pieChartPlugins"
+    [legend]="pieChartLegend">
+  </canvas>
+        </div>
+</div>
+  
+</div>
+<div class="row">
+    <div class="col-md-6">
+            <div style="display:block">
+                    <canvas baseChart 
+               [data]="pieChartDat" 
+               [labels]="pieChartLabel" 
+               [chartType]="pieChartTyp"
+               [options]="pieChartOptions"
+               [plugins]="pieChartPlugins"
+               [legend]="pieChartLegen">
+             </canvas>
+                   </div>
+    </div>
+    <div class="col-md-6">
+            <div style="display:block">
+                    <canvas baseChart 
+               [data]="pieChartDa" 
+               [labels]="pieChartLabe" 
+               [chartType]="pieChartTy"
+               [options]="pieChartOptio"
+               [plugins]="pieChartPlugi"
+               [legend]="pieChartLege">
+             </canvas>
+                   </div>
+        </div>
+</div>
+</div>
